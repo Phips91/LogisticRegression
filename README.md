@@ -2,6 +2,10 @@
 
 #Projektname: Logistic Regression
 
+Anleitung zum Betrieb des Codes: 
+1. MyBinder über den BinderBatch öffnen
+2. Nach dem öffnen des MyBinder, das Notebook
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phips91/LogisticRegression.git/HEAD)
 
 Hier ist eine kurze Dokumentation zum gegebenen Code:
