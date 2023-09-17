@@ -25,10 +25,6 @@ In diesem Projekt wird ein logistisches Regressionsmodell entwickelt, um vorherz
 - 'Timestamp': Die Zeit, zu der der Nutzer auf die Werbeanzeige geklickt oder das Fenster geschlossen hat.
 - 'Clicked on Ad': Ob der Nutzer auf die Werbeanzeige geklickt hat (1) oder nicht (0).
 
-**Libraries installieren**
-
-Zuerst werden die erforderlichen Python-Bibliotheken installiert, darunter numpy, pandas, seaborn und scikit-learn. Dies geschieht mithilfe von pip, dem Paketmanager für Python.
-
 **Libraries importieren**
 
 Nach der Installation der Bibliotheken werden sie importiert, um in diesem Projekt verwendet zu werden. Dies umfasst pandas für Datenmanipulation, numpy für numerische Berechnungen, matplotlib und seaborn für die Datenvisualisierung sowie scikit-learn für das Trainieren und Auswerten des logistischen Regressionsmodells.
