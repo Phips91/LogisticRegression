@@ -20,4 +20,4 @@ binder:
 
 # Starten Sie das Jupyter Notebook automatisch beim Öffnen des Binders
 postBuild:
-  - 'jupyter nbconvert --execute 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb --to notebook --inplace'
+  - 'jupyter notebook --no-browser --NotebookApp.default_url=/tree/binder --NotebookApp.token='' 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb'
