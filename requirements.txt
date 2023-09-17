@@ -1,0 +1,5 @@
+--upgrade pip
+numpy
+pandas
+seaborn
+scikit-learn
