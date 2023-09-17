@@ -5,3 +5,6 @@ ${NB_PYTHON_PREFIX}/bin/pip install --no-cache-dir --upgrade pip
 
 # Install packages from requirements.txt
 ${NB_PYTHON_PREFIX}/bin/pip install --no-cache-dir -r requirements.txt
+
+# Convert and execute the specified notebook
+${NB_PYTHON_PREFIX}/bin/jupyter nbconvert --to notebook --execute 3-Logistische_Regression_Projekt-Loesung.ipynb --output 3-Logistische_Regression_Projekt-Loesung.ipynb
