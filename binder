@@ -1,1 +1,9 @@
+# binder/environment.yml
+dependencies:
+  - python=3.7
+  - jupyter
+  - nbconvert
+  - notebook
 
+postBuild:
+  - jupyter nbconvert 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb --to notebook --inplace --execute
