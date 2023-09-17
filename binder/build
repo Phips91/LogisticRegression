@@ -1,1 +1,23 @@
+# binder/build
 
+# Verwenden Sie die gewünschte Docker-Basisimage-Version
+image: jupyter/base-notebook:latest
+
+# Anweisungen für die Konfiguration von MyBinder
+binder:
+  # Konfigurieren Sie die Arbeitsumgebung
+  buildPath: ./binder
+  # Fügen Sie die URL zum gewünschten Notebook hinzu
+  # Stellen Sie sicher, dass die URL auf die Raw-Version des Notebooks verweist
+  # Verwenden Sie den Raw-Link von GitHub oder einer anderen Quelle
+  spec:
+    dependencies:
+      - notebook==6.4.5
+      - jupyterlab==3.1.15
+      - numpy
+      - pandas
+      - scikit-learn
+
+# Starten Sie das Jupyter Notebook automatisch beim Öffnen des Binders
+postBuild:
+  - jupyter notebook 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb
