@@ -18,6 +18,12 @@ binder:
       - pandas
       - scikit-learn
 
-# Starten Sie das Jupyter Notebook automatisch beim Öffnen des Binders
-postBuild:
-  - 'jupyter notebook --no-browser --NotebookApp.default_url=/tree/binder --NotebookApp.token='' 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb'
+# binder/start
+
+#!/bin/bash
+
+# Startbefehl, um das Jupyter Notebook zu öffnen
+jupyter nbconvert --execute --to notebook --inplace 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb
+
+# Starten Sie den Jupyter Notebook-Server
+exec jupyter notebook --no-browser --NotebookApp.default_url=/tree --NotebookApp.token='' 3-Logistische_Regression_Projekt-Loesung_Angepasst.ipynb
